@@ -1,5 +1,10 @@
+import java.util.Arrays;
+
 public class MissingNumber {
     public static void main(String[] args) {
+        int [] arr = {3, 0, 1};
+        int m = missingNumber(arr);
+        System.out.println(m);
         
     }
     static int missingNumber(int [] arr) 
