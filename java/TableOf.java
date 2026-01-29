@@ -22,5 +22,24 @@ public class TableOf
         }
     }
 
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
 
+class Main {
+    public static void main(String[] args) {
+        for(int tableNum = 1; tableNum <=10; tableNum++)
+        {
+            for(int mul = 1; mul <=10; mul++)
+            {
+                
+                    System.out.print(tableNum * mul);
+                    System.out.print(" ");
+                
+            }
+            System.out.println();
+        }
+    
+        
+    }
+}
 
