@@ -74,6 +74,7 @@ public class NumberPattern
 // ---+-+-+-+
 // ----+-+-+-+-+
 // -----+-+-+-+-+-+
+
 int coni = 1;
 int conj = 1;
 for(int row = 1; row<=6; row++)
