@@ -22,18 +22,42 @@ public class NumberPattern
     // }
     // }
 
-    int initialization = 1;
-    int condition = 1;
+    // int initialization = 1;
+    // int condition = 1;
     
-    for(int i=1; i<=5; i++)
-    {
-        for(int j = initialization; j<=condition; j++)
-        {
-            System.out.print(j + " ");
-        }
-        initialization += 3;
-        condition += 4;
-        System.out.println();
-    }
+    // for(int i=1; i<=5; i++)
+    // {
+    //     for(int j = initialization; j<=condition; j++)
+    //     {
+    //         System.out.print(j + " ");
+    //     }
+    //     initialization += 3;
+    //     condition += 4;
+    //     System.out.println();
+    // }
+
+    // for (int s=1, e=1; s<=13; s+=3, e+=4) 
+    // {
+    //     for(int i=s; i<=e; i++)
+    //     {
+    //         System.out.print(i + " ");
+    //     }
+    //     System.out.println();
+    // }
+
+    // int initialization = 1;
+    // int condition = 1;
+    
+    // for(int i=1; i<=5; i++)
+    // {
+    //     for(int j = initialization; j<=condition; j+=2)
+    //     {
+    //         System.out.print(j + " ");
+    //     }
+    //     initialization += 1;
+    //     condition += 3;
+    //     System.out.println();
+    // }
+
 }
 }
