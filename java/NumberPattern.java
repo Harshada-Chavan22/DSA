@@ -59,5 +59,40 @@ public class NumberPattern
     //     System.out.println();
     // }
 
+    // for (int s=1, e=1; s<=5; s+=1, e+=3) 
+    // {
+    //     for(int i=s; i<=e; i+=2)
+    //     {
+    //         System.out.print(i + " ");
+    //     }
+    //     System.out.println();
+    // }
+
+// +
+// -+-+
+// --+-+-+
+// ---+-+-+-+
+// ----+-+-+-+-+
+// -----+-+-+-+-+-+
+int coni = 1;
+int conj = 1;
+for(int row = 1; row<=6; row++)
+{   
+for(int i=3; i<=coni; i++)
+{
+    System.out.print("-");
 }
+for(int j=1; j<=conj; j++)
+{
+    if(conj == 1)
+        System.out.print("+");
+    else
+        System.out.print("-+");
+}
+System.out.println();
+coni+=1;
+conj+=1;
+}
+
+    }
 }
