@@ -95,19 +95,19 @@ public class NumberPattern
 // conj+=1;
 // }
 
-int initialization = 1;
+// int initialization = 1;
 
-        for (int i = 1; i <= 4; i++) {   
+//         for (int i = 1; i <= 4; i++) {   
 
-            int condition = initialization + i - 1;
+//             int condition = initialization + i - 1;
 
-            for (int j = initialization; j <= condition; j++) {
-                System.out.print(j + " ");
-            }
+//             for (int j = initialization; j <= condition; j++) {
+//             //     System.out.print(j + " ");
+//             // }
 
-            initialization = condition + 1; 
-            System.out.println();
-        }
+//             // initialization = condition + 1; 
+//             System.out.println();
+//         }
 
     }
 }
