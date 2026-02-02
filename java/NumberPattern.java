@@ -59,14 +59,21 @@ public class NumberPattern
     //     System.out.println();
     // }
 
-    // for (int s=1, e=1; s<=5; s+=1, e+=3) 
-    // {
-    //     for(int i=s; i<=e; i+=2)
-    //     {
-    //         System.out.print(i + " ");
-    //     }
-    //     System.out.println();
-    // }
+    for (int s=1, e=1; s<=6; s+=1, e+=3) 
+    {
+        
+        for (int i = 1; i <= s-2; i++) {
+            System.out.print("-");
+        }
+        for(int j=s; j<=e; j+=2)
+        {
+            if(j==1)
+            System.out.print("+");
+            else
+            System.out.print("-+");
+        }
+        System.out.println();
+    }
 
 // +
 // -+-+
@@ -111,17 +118,24 @@ public class NumberPattern
 
  
 
-        for (int i = 1; i <= 5; i++) {          
-            for (int j = 1; j <= 5; j++) {      
+        // for (int i = 1; i <= 5; i++) {          
+        //     for (int j = 1; j <= 5; j++) {      
 
-                if (i == 1 || i == 5 || j == 1 || j == 5) {
-                    System.out.print("*");
-                } else {
-                    System.out.print(" ");
-                }
-            }
-            System.out.println(); // new line after each row
-        }
+        //         if (i == 1 || i == 5 || j == 1 || j == 5) {
+        //             System.out.print("*");
+        //         } else {
+        //             System.out.print(" ");
+        //         }
+        //     }
+        //     System.out.println(); // new line after each row
+        // }
+//         for (int i = 1; i <= 8; i++) {
+//     if (i <= 3) {
+//         System.out.print("-");
+//     } else {
+//         System.out.print("-+");
+//     }
+// }
 
     }
 }
