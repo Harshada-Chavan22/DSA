@@ -1,12 +1,27 @@
 public class SingleNumber {
+
     public static void main(String[] args) {
-        for(int element = 0; element<3; element++)
-        {
-            for(int duplicate = 0; duplicate <= 3; duplicate++)
-              if(duplicate != element)
-                if (nums[element] == nums[duplicate])
-                   return new int[]{-1};
+        int[] nums = {4, 1, 2, 1, 2};
+        int result = singleNumber(nums);
+        System.out.println(result); // prints 1
+    }
+
+    static int singleNumber(int[] nums) {
+
+        for (int element = 0; element < nums.length; element++) {
+            boolean isDuplicate = false;
+
+            for (int duplicate = 0; duplicate < nums.length; duplicate++) {
+                if (duplicate != element && nums[element] == nums[duplicate]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            if (!isDuplicate) {
+                return nums[element]; // ✅ FIXED
+            }
         }
-        return new int[]{duplicate};
+        return -1;
     }
 }
