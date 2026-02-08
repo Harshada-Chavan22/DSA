@@ -1,13 +1,13 @@
 public class StarPattern {
     public static void main(String[] args) {
-//         for (int i = 1; i <= 10; i++) {
-//     int limit = (i % 2 == 1) ? (i + 1) / 2 : 6 - (i / 2);
+        for (int i = 1; i <= 10; i++) {
+    int limit = (i % 2 == 1) ? (i + 1) / 2 : 6 - (i / 2);
 
-//     for (int j = 1; j <= limit; j++) {
-//         System.out.print("*");
-//     }
-//     System.out.println();
-// }
+    for (int j = 1; j <= limit; j++) {
+        System.out.print("*");
+    }
+    System.out.println();
+}
 
         // for(int i=1; i<=5; i++)
         // {
@@ -144,23 +144,23 @@ public class StarPattern {
 // ***** 
 //     *     
 
-for (int i = 1; i <= 5; i++) {
+// for (int i = 1; i <= 5; i++) {
 
-    for (int j = 1; j <= 5; j++) {
+//     for (int j = 1; j <= 5; j++) {
 
-        if (j <= i) {
-            System.out.print("*");
-        }
+//         if (j <= i) {
+//             System.out.print("*");
+//         }
 
-        if (j == i) {
-            System.out.println();
-        }
+//         if (j == i) {
+//             System.out.println();
+//         }
 
-        if (j <= 6 - i) {
-            System.out.print("*");
-        }
-    }
-    System.out.println();
-}
+//         if (j <= 6 - i) {
+//             System.out.print("*");
+//         }
+//     }
+//     System.out.println();
+// }
 }
 }
