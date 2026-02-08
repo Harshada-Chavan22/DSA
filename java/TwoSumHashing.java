@@ -9,7 +9,7 @@ public class TwoSumHashing {
     }
         static int[] twoSum(int[] arr, int target)
         {
-            int [] indexOf = new int[11];
+            int [] indexOf = new int[100];
             Arrays.fill(indexOf, -1);
         for (int index = 0; index < arr.length; index++) 
         {
@@ -18,14 +18,15 @@ public class TwoSumHashing {
         for(int firstInd = 0 ; firstInd < arr.length; firstInd++)
         {
             int secVal = target - arr[firstInd];
-            if(indexOf[secVal] == -1)
+            if(indexOf[secVal] == -1  )
             {
-                //if(firstInd == indexOf[secVal]);
-                  continue;
+                continue;
             }
+            if(firstInd == indexOf[secVal])
+                continue;
             return new int[]{firstInd, indexOf[secVal]};
         }
-        return new int[]{0};
+        return new int[]{-1,-1};
         }
     
 }
