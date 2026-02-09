@@ -34,7 +34,7 @@ public class TwoSumHashing {
         int[] result = twoSum(arr, target);
         System.out.println(result[0] + " " + result[1]);
     }
-        // Step 1: find max value
+        // Step 1: find max value   
         static int[] twoSum(int[] arr, int target)
         {
         int max = arr[0];
@@ -48,7 +48,7 @@ public class TwoSumHashing {
         int[] indexOfVisited = new int[max + 1];
         for(int index = 0; index < arr.length; index++)
         {
-            if(indexOfVisited[target-arr[index]] != 0 || arr[index] + arr[0] == target) 
+            if(indexOfVisited[target-arr[index]] != 0 || arr[index] + arr[0] == target)
                 return new int[]{index, indexOfVisited[target - arr[index]]};
             indexOfVisited[arr[index]] = index;
         }
