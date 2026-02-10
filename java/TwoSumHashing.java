@@ -43,7 +43,7 @@ public class TwoSumHashing {
                 max = arr[i];
             }
         }
-
+        int indexOfVisited[];
         // Step 2: create visited array
         int[] indexOfVisited = new int[max + 1];
         for(int index = 0; index < arr.length; index++)
