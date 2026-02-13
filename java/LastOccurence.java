@@ -1,11 +1,10 @@
-public class FirstOccurence {
+public class LastOccurence {
     public static void main(String[] args) {
         int[] arr = {2,5,5,5,6,7};
         int target = 5;
         int ans = binarySearch(arr, target);
         System.out.println(ans);
     }
-
     static int binarySearch(int[] arr, int target) {
         int start = 0;
         int end = arr.length - 1;
@@ -22,9 +21,11 @@ public class FirstOccurence {
             } 
             else {
                 ans = mid;
-                end = mid - 1;
+                start = mid + 1;
             }
         }
         return ans; // not found
     }
 }
+
+
