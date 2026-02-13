@@ -1,6 +1,6 @@
 public class BinarySearching {
     public static void main(String[] args) {
-        int[] arr = {2,3,5,14,14,16,18};
+        int[] arr = {2,5,5,5,6,7};
         int target = 5;
         boolean ans = binarySearch(arr, target);
         System.out.println(ans);
@@ -10,7 +10,7 @@ public class BinarySearching {
         int start = 0;
         int end = arr.length - 1;
 
-        while (start <= end) {
+        while (start == end) {
             int mid = start + (end - start) / 2;
 
             if (arr[mid] < target) {
