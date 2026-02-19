@@ -1,6 +1,6 @@
 public class MaxLevel {
     public static void main(String[] args) {
-        int n = 10;
+        int n = 15;
     int ans = maxLevel(n);
     System.out.println(ans);
     }
