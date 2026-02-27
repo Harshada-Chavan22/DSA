@@ -14,7 +14,7 @@ public class TwoSumHashMap {
 
         for (int i = 0; i< arr.length; i++)
         {
-            int need = target - arr[i];
+            int need = target;
 
             if( map.containsKey(need) )
                 return new int[] {map.get(need), i};
