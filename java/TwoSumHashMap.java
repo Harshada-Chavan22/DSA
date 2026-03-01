@@ -22,5 +22,6 @@ public class TwoSumHashMap {
             map.put(arr[i], i);
         }
         return new int[]{-1,-1};
+        return 0;
     }
 }
