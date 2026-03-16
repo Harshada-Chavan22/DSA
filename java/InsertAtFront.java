@@ -7,4 +7,5 @@ public class InsertAtFront {
         newNode.next = head;
         return newNode;
     }
-} return newNode;
+} return newNode; 
+All the best harshu!!
