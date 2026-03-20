@@ -8,4 +8,4 @@ public class InsertAtFront {
         return newNode;
     }
 } return newNode; 
-All the best harshu!!
+
