@@ -1,3 +1,5 @@
+import org.w3c.dom.Node;
+
 public class LL
 {
     Node head;
@@ -9,10 +11,10 @@ public class LL
     }
     class Node
     {
-        String data;
+        int data;
         Node next;
 
-        Node(String data)
+        Node(int data)
         {
             this.data = data;
             this.next = null;
@@ -21,17 +23,17 @@ public class LL
     }
     
     // add - first, last
-    public void addFirst(String data)
-    {
-        Node newNode = new Node(data);
-        if(head == null)
-        {
-           head = newNode;
-           return;
-        }
-        newNode.next = head;
-        head = newNode;    
-    }
+    // public void addFirst(String data)
+    // {
+    //     Node newNode = new Node(data);
+    //     if(head == null)
+    //     {
+    //        head = newNode;
+    //        return;
+    //     }
+    //     newNode.next = head;
+    //     head = newNode;    
+    // }
     //add - last
     public void addLast(String data)
     {
@@ -63,66 +65,93 @@ public class LL
             } 
             System.out.println("NULL");
     }       
-    //delete - first
-    public void deleteFirst()
+    // //delete - first
+    // public void deleteFirst()
+    // {
+    //     if(head == null)
+    //     {
+    //         System.out.println("List is empty");
+    //         return;
+    //     }
+    //     size--;
+    //     head = head.next;
+    // }   
+    // //delete - last
+    // public void deleteLast()
+    // {
+    //     if(head == null)
+    //     {
+    //         System.out.println("List is empty");
+    //         return;
+    //     }
+    //     size--;
+    //     if(head.next == null)
+    //     {
+    //         head = null;
+    //         return;
+    //     }
+    //     Node secondLast = head;
+    //     Node lastNode = head.next;
+    //     while(lastNode.next != null)
+    //     {
+    //         lastNode = lastNode.next;
+    //         secondLast = secondLast.next;
+    //     }
+    //     secondLast.next = null;
+    // }
+    // //size
+    // public int getSize()
+    // {
+    //     return size;
+    // }
+    public void reverseIterate()
     {
-        if(head == null)
+        if(head == null || head.next == null)
         {
-            System.out.println("List is empty");
             return;
         }
-        size--;
-        head = head.next;
-    }   
-    //delete - last
-    public void deleteLast()
-    {
-        if(head == null)
+        Node prevNode = head;
+        Node currNode = head.next;
+        while(currNode != null)
         {
-            System.out.println("List is empty");
-            return;
+            Node nextNode = currNode.next;
+            currNode.next = prevNode;
+
+            //update
+            prevNode = currNode;
+            currNode = nextNode;
         }
-        size--;
-        if(head.next == null)
-        {
-            head = null;
-            return;
-        }
-        Node secondLast = head;
-        Node lastNode = head.next;
-        while(lastNode.next != null)
-        {
-            lastNode = lastNode.next;
-            secondLast = secondLast.next;
-        }
-        secondLast.next = null;
-    }
-    //size
-    public int getSize()
-    {
-        return size;
+        head.next = null;
+        head = prevNode;
     }
     public static void main(String [] args)
     {
         LL list = new LL();
-        list.addFirst("a");
-        list.addFirst("is");
-        list.printList();
+        // list.addFirst("a");
+        // list.addFirst("is");
+        // list.printList();
 
-        list.addLast("list");
-        list.printList();
+        // list.addLast("list");
+        // list.printList();
 
-        list.addFirst("this");
-        list.printList();
+        // list.addFirst("this");
+        // list.printList();
 
-        list.deleteFirst();
-        list.printList();
+        // list.deleteFirst();
+        // list.printList();
 
-        list.deleteLast();
-        list.printList();
+        // list.deleteLast();
+        // list.printList();
 
-        System.out.print(list.getSize());
-        list.addFirst("this");
-        System.out.println(list.getSize());
+        // System.out.print(list.getSize());
+        // list.addFirst("this");
+        // System.out.println(list.getSize());
+
+        list.addLast(1);
+        list.addLast(2);
+        list.addLast(3);
+        list.addLast(4);
+        list.reverseIterate();
+        list.printList();
     }
 }
