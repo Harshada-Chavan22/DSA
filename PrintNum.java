@@ -12,5 +12,5 @@ public class PrintNum {
         int n = 1;
         printNumber(n);
     }
-    //sahi h bhai 
+    //sahi h bhai o chacha wastekunuhaiya!!
 }
