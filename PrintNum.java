@@ -12,4 +12,5 @@ public class PrintNum {
         int n = 1;
         printNumber(n);
     }
+    //sahi h bhai 
 }
