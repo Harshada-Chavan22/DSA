@@ -13,4 +13,5 @@ public class PrintNum {
         printNumber(n);
     }
     //sahi h bhai o chacha wastekunuhaiya!!
+    //bahut stress h yrr job ka matlab bahut hi bad feel ho rha hh
 }
